@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8"/>
+			<title>Portal de notícias</title>
+		</head>
+	<body>
+
+        <h1>Notícia</h1>
+        
+        <table>
+                <tr>
+                    <td>Id</td>
+                    <td>Título</td>
+                    <td>Notícia</td>
+                    <td>Data Criação</td>
+                </tr>
+        
+                <% for(const item of noticias) { %>
+                <tr>
+                    <td><%= item.id_noticia %></td>
+                    <td><%= item.titulo %></td>
+                    <td><%= item.noticia %></td>
+                    <td><%= item.data_criacao %></td>
+                </tr>
+                <% } %>
+            </table>
+
+	</body>
+</html>
